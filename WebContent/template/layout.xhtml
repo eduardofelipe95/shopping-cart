@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+	<h:head>
+		<title>Teste JSF</title>
+		
+		<style>
+		
+			body {
+				margin: 0;
+				padding: 0;			
+			}
+			
+			#header, #menu, #content, #footer {
+				float: left;
+				width: 100%;
+			}	
+			
+			#menu {
+			
+			}
+		
+			
+			#main-wrapper {			
+				width: 1120px;
+				margin: 0 auto;
+			}
+		
+			#content {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			
+			#footer {
+				
+			}
+			
+			.clearboth {
+			    clear: both;
+			}
+		
+		</style>
+	</h:head> 
+	
+	<h:body> 
+		<div id="main-wrapper">
+			<div id="header">
+				<h1>Shopping Cart - by André</h1>
+			</div>
+			
+			<div id="menu">
+				<h:form>
+					<p:menubar>
+						<p:menuitem value="Página inicial" url="#" />
+						<p:menuitem value="Carrinhos" url="#" />
+						<p:menuitem value="Produtos" url="#" />
+						<p:menuitem value="Usuários" url="#" />					
+					</p:menubar>
+				</h:form>
+			</div>	
+			
+			<div id="content">
+				<ui:insert name="content">
+					<ui:include src="/template/content.xhtml" />			
+				</ui:insert>
+			</div>
+			
+			<div id="footer">
+				Footer			
+			</div>
+			
+			<div class="clearboth"></div>
+		</div>
+	</h:body> 
+
+</html>

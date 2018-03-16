@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+	<h:head>
+		<title>Teste JSF</title>
+		
+		<style>
+
+		
+		</style>
+	</h:head> 
+	
+	<h:body> 
+		<div id="main-wrapper">
+			<div id="header">
+				<h1>Shopping Cart - by André</h1>
+			</div>
+			
+			<div id="menu">
+				<h:form>
+					<p:menubar>
+						<p:menuitem value="Página inicial" url="#" />
+						<p:menuitem value="Carrinhos" url="#" />
+						<p:menuitem value="Produtos" url="#" />
+						<p:menuitem value="Usuários" url="#" />					
+					</p:menubar>
+				</h:form>
+			</div>	
+			
+			<div id="content">
+				<b:container fluid="true">
+				 <b:row>
+				   <b:column medium-screen="2">
+				     <h:outputText value="Username:"/>
+				   </b:column>
+				   <b:column medium-screen="4">
+				     <b:inputText placeholder="Username" />
+				   </b:column>
+				   <b:column medium-screen="6">
+				     <b:message/>
+				   </b:column>
+				 </b:row>
+				 <b:row>
+				   <b:column medium-screen="2">
+				     <h:outputText value="Password:" />
+				   </b:column>
+				   <b:column medium-screen="4">
+				     <b:inputSecret placeholder="Password" />
+				   </b:column>
+				   <b:column medium-screen="6">
+				     <b:message />
+				   </b:column>
+				 </b:row>
+				 <b:row>
+				   <b:column span="2" offset="2">
+				     <b:commandButton value="login" look="primary" style="width:100%" />
+				   </b:column>
+				   <b:column span="2">
+				     <b:commandButton value="password forgotten" look="danger" style="width:100%" />
+				    </b:column>
+				  </b:row>
+				</b:container>
+			</div>
+			
+			<div id="footer">
+				Footer			
+			</div>
+			
+			<div class="clearboth"></div>
+		</div>
+	</h:body> 
+
+</html>
